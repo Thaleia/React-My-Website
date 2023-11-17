@@ -1,12 +1,33 @@
 import React from 'react'
 import "./about.css"
+import Typewriter from "typewriter-effect";
+import logo from './images/logo.png';
+
 
 const About = () => {
   return (
-    <div>
+    <div className='about'>
+      <img src={logo}></img>
         <h1>Thaleia Vavanou!</h1>
-      <p>Hello! I'm a solution-driven, ambitious, and adaptable Full Stack Developer with true passion for creating extraordinary web products and
-services! I thrive by learning new technologies, and successfully collaborating to deliver measurable business growth.  My mission is to create apps for a holistic and fun brand experience which turns your customers into fans!</p>
+        <h2>
+          <Typewriter
+ 
+                onInit={(typewriter) => {
+                    typewriter
+                        .typeString("Full Stack Developer")
+                        .pauseFor(500)
+                        .deleteAll()
+                        .typeString("Frontend Developer")
+                        .pauseFor(2000)
+                        .deleteAll()
+                        .typeString("Full Stack Developer")
+                        .start();
+                }}
+            />
+            </h2>
+      <p>Hello! I'm a solution-driven, ambitious, and adaptable developer with true passion for creating extraordinary web products and
+services! I thrive by learning new technologies and successfully collaborating to deliver measurable business growth.  My mission is to create apps for a holistic and fun brand experience which turns your customers into fans!</p>
+    <button>Buy Skills</button>
     </div>
   )
 }
