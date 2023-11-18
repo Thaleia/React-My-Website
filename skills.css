@@ -1,0 +1,22 @@
+.skill ul {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+.skills li {
+    list-style-type: none;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 150px;
+    list-style: none;
+    display: inline-block;
+    height: 120px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: black;
+    color: lightgrey;
+}
