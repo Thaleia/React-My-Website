@@ -7,7 +7,7 @@ import "./skills.css";
 const Skills = () => {
   return (
     <div className='skills'>
-      <h1>Hard skills</h1>
+      <h1>Hard Skills</h1>
       <div>
         <ul>
           {hardSkills.map((hardSkill) => (
@@ -20,7 +20,7 @@ const Skills = () => {
           ))}
         </ul>
       </div>
-      <h1>Soft skills</h1>
+      <h1>Soft Skills</h1>
       <div>
         <ul>
           {softSkills.map((softSkill) => (
