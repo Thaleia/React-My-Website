@@ -7,7 +7,7 @@ import logo from './images/logo.png';
 const About = () => {
   return (
     <div className='about'>
-      <img src={logo}></img>
+      <img src={logo} alt='Thaleia Vavanou'></img>
         <h1>Thaleia Vavanou!</h1>
         <h2>
           <Typewriter

@@ -8,10 +8,13 @@ const Typewriter = () => {
       <Typewriter
  onInit={(typewriter) => {
      typewriter
-         .typeString("GeeksForGeeks")
+         .typeString("Full Stack Developer")
          .pauseFor(1000)
          .deleteAll()
-         .typeString("Welcomes You")
+         .typeString("Frontend Developer")
+         .deleteAll()
+         .pauseFor(1000)
+         .typeString("Full Stack Developer")
          .start();
  }}
 />
