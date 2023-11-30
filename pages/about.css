@@ -1,0 +1,80 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.aimg1 {
+    background-image: url("./images/aimg1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.aimg2 {
+    background: url("./images/aimg2.jpeg");
+    min-height: 40vh;
+    min-width: 100vw;
+}
+.aimg3 {
+    background-image: url("./images/aimg3.jpeg");
+    min-height: 40vh;
+    min-width: 100vw;
+
+}
+
+.aimg1, .aimg2, .aimg3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+.section-light {
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+}
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+.atext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.aborder {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+}
+
+.aborder.trans {
+    background-color: transparent;
+}
+.ap, .section h2{
+    text-align: center;
+    padding-top: 20px;
+}
+.ap {
+    padding-bottom: 20px;
+}

@@ -1,0 +1,31 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home h2 {
+    color: rgb(29, 155, 240);
+}
+
+.home img {
+    border-radius: 100%;
+    border: 8px solid rgb(29, 155, 240);
+    height: 200px;
+}
+
+.home button {
+    border-radius: 24px;
+    padding-inline: 30px;
+    padding-block: 15px;
+    border: 3px solid rgb(29, 155, 240);
+    border-style: solid;
+    font-size: medium;
+}
+
+.home p {
+    max-width: 700px;
+    margin-inline: 30px;
+}
