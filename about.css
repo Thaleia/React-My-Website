@@ -23,19 +23,12 @@ body, html {
     background: url("./images/aimg2.jpeg");
     min-height: 40vh;
     min-width: 100vw;
-    margin: 0;
-    padding: 0;
 }
 .aimg3 {
     background-image: url("./images/aimg3.jpeg");
     min-height: 40vh;
     min-width: 100vw;
 
-}
-
-.pimg4 {
-    background-image: url("./images/pimg22.jpeg");
-    min-height: 400px;
 }
 
 .aimg1, .aimg2, .aimg3 {
@@ -50,10 +43,18 @@ body, html {
 }
 .section-light {
     background-color: lightgrey;
+    margin: 0;
+    padding: 0;
 }
 .section-dark {
     background-color: #282e34;
     color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+.section {
+    margin: 0;
+    padding: 0;
 }
 .atext {
     position: absolute;
