@@ -1,0 +1,29 @@
+
+  .threeD {
+    color: #591385;
+    color: #861dc8;
+    white-space: nowrap;
+    font-size: 2.8em;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    text-shadow: 1px 1px 0   #7719b2, 1px 2px 0   #68169b, 1px 3px 0   #591385, 1px 4px 0   #4a106f,
+      1px 5px 0 #3b0d58, 1px 6px 0 #2c0942,
+      5px 13px 15px #5832bf;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .threeD:hover {
+    transition: 0.3s;
+    text-shadow: 1px -1px 0 #3b217f, 1px -2px 0 #3b217f, 1px -3px 0 #5832bf,
+      1px -4px 0 #5832bf, 1px -5px 0 #6438d8, 1px -6px 0 #6438d8, 1px -7px 0 #7643ff,
+      1px -8px 0 #7643ff, 5px -13px 15px black, 5px -13px 25px #5832bf;
+  }
+  
+  /* Kudos to Ashis Anand for sharing the threeD code that I partly used in this project: https://codepen.io/anotherwebguy/pen/zmGrrz */
+
+.universalBackground {
+    /* background: rgb(211,211,211); */
+    background: linear-gradient(90deg, rgba(211,211,211,1) 0%, rgba(118,67,255,0.6412103746397695) 100%);
+}
+

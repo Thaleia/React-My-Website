@@ -1,0 +1,25 @@
+.home {
+    position: relative;
+    padding-right: calc(100vw / 3); /* Set the right padding to 1/3 of the viewport width */
+  }
+  
+  .parallax-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh; /* Take up the full height of the viewport */
+    width: calc(100vw / 3); /* Set the width to 1/3 of the viewport width */
+    overflow: hidden;
+    transition: transform 2s ease; /* Animation over 2 seconds */
+  }
+  
+  .parallax-container:hover {
+    transform: translateX(calc(-100% + calc(100vw / 3))); /* Slide from right to left */
+  }
+  
+  .parallax-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

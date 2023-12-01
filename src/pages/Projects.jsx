@@ -1,3 +1,5 @@
+// Projects.js
+
 import React from 'react';
 import { projects } from '../data/data.js';
 import "./projects.css";
@@ -10,9 +12,11 @@ const ButtonProjects = ({ project }) => (
 );
 
 const Project = ({ project }) => (
-  <li className="project" key={project.id}>
+  <li className="project">
     <h2>{project.title}</h2>
+    <div className='project-img-container'>
     <img src={project.image} alt={project.title} />
+    </div>
     <p>{project.description}</p>
     <ButtonProjects project={project} />
     <h5>Technologies used: {project.subtitle}</h5>
@@ -20,14 +24,16 @@ const Project = ({ project }) => (
 );
 
 const Projects = () => (
+  <>
+  <h1>Projects</h1>
   <div className="projects-container">
-    <h1>Projects</h1>
     <ul className="projects-list">
       {projects.map((project) => (
         <Project key={project.id} project={project} />
       ))}
     </ul>
   </div>
+  </>
 );
 
 export default Projects;

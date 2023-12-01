@@ -1,0 +1,30 @@
+.home {
+    position: relative;
+    padding-right: calc(100vw / 3); /* Set the right padding to 1/3 of the viewport width */
+    overflow: hidden; /* Ensure child elements do not overflow */
+    height: 100vh; /* Set the height to full viewport height */
+  }
+  
+  .parallax-container {
+    position: absolute; /* Change to absolute positioning */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%; /* Expand to full height of the parent */
+    width: calc(100vw / 3); /* Set the width to 1/3 of the viewport width */
+    overflow: hidden;
+    transition: width 0.5s ease, opacity 0.5s ease; /* Initial transition for smooth effect */
+    opacity: 0.7;
+}
+  
+  .parallax-container:active {
+    width: 66.666%; /* Expand the width on hover to 2/3 of the viewport width */
+    transition: width 2.5s ease, opacity 2.5s ease; /* Reset transition on hover */
+  }
+  
+  .parallax-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

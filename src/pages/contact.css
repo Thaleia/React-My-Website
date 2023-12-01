@@ -13,3 +13,91 @@
   .popover p {
     margin: 0 0 10px;
   }
+
+  :root {
+    --ruler: 16px;
+    --color-red: #AE1100;
+    --color-bg: #EBECF0;
+    --color-shadow: #BABECC;
+    --color-white: #FFF;
+  }
+  
+  /* body,
+  html {
+    background-color: var(--color-bg);
+  } */
+  
+  /* select,
+  textarea,
+  button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.2px;
+    font-size: var(--ruler);
+    color: blue;
+  } */
+  
+  /* div,
+  p {
+    color: var(--color-shadow);
+    text-shadow: 1px 1px 1px var(--color-white);
+  } */
+  
+  form {
+    padding: var(--ruler);
+    width: calc(var(--ruler) * 20);
+    margin: 0 auto;
+  }
+  
+  button,
+  input, 
+  textarea {
+    border: 0;
+    outline: 0;
+    font-size: var(--ruler);
+    border-radius: calc(var(--ruler) * 20);
+    padding: var(--ruler);
+    background-color: var(--color-bg);
+    text-shadow: 1px 1px 0 var(--color-white);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: calc(var(--ruler) * 1.5);
+    width: 100%;
+  }
+  
+  input, textarea {
+    margin-right: calc(var(--ruler) / 2);
+    box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  
+  input:focus {
+    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+  }
+  
+  button {
+    color: #61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  button:hover {
+    box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
+  }
+  
+  button:active {
+    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+  }
+  
+  button .icon {
+    margin-right: calc(var(--ruler) / 2);
+  }
+  

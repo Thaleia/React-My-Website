@@ -1,31 +1,98 @@
-.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.aimg1 {
+    background-image: url("./images/aimg1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.aimg2 {
+    background: url("./images/aimg2.jpeg");
+    min-height: 60vh;
+    min-width: 100vw;
+}
+
+.aimg3 {
+    background-image: url("./images/aimg3.jpeg");
+    min-height: 60vh;
+    min-width: 100vw;
+}
+
+.aimg1, .aimg2, .aimg3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+.section-light {
+    background-color: lightgrey;
+    color: rgb(89, 19, 133);
+    border-block: 1px solid lightgrey;
+
+}
+.section-dark {
+    background-color: rgb(89, 19, 133);
+    /* background-color: #7643ff; */
+    color: #ddd;
+    border-block: 1px solid rgb(89, 19, 133);
+}
+
+.atext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
     text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.aborder {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-shadow: #FC0 1px 0 10px;}
+
+.aborder.trans {
+    background-color: transparent;
+}
+.ap {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.aph2 {
+    padding-top: 30px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    text-shadow: #00FF00 1px 0 2px;
+    letter-spacing: 4px;
+}
+.aSoftSkills{
+    text-shadow: white 1px 0 2px;
+    font-size: 26px;
+}
+.about {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
 }
 
-.about h2 {
-    color: rgb(29, 155, 240);
-}
-
-.about img {
-    border-radius: 100%;
-    border: 8px solid rgb(29, 155, 240);
-    height: 200px;
-}
-
-.about button {
-    border-radius: 24px;
-    padding-inline: 30px;
-    padding-block: 15px;
-    border: 3px solid rgb(29, 155, 240);
-    border-style: solid;
-    font-size: medium;
-}
-
-.about p {
-    max-width: 700px;
-    margin-inline: 30px;
+@media screen and (max-width: 650px) {
+    .atext:last-of-type {
+        font-size: 18px;
+        margin: 0;
+        letter-spacing: 5px;
+    }
 }
