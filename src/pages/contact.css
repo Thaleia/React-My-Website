@@ -46,9 +46,10 @@
     padding: var(--ruler);
     width: calc(var(--ruler) * 20);
     margin: 0 auto;
+
   }
   
-  button,
+  .cButton,
   input, 
   textarea {
     border: 0;
@@ -58,6 +59,8 @@
     padding: var(--ruler);
     background-color: var(--color-bg);
     text-shadow: 1px 1px 0 var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+
   }
   
   label {
@@ -80,7 +83,7 @@
     box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
   }
   
-  button {
+  .cButton {
     color: #61677C;
     font-weight: bold;
     box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
@@ -89,15 +92,31 @@
     font-weight: 600;
   }
   
-  button:hover {
+  .cButton:hover {
     box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
   }
   
-  button:active {
+  .cButton:active {
     box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+    cursor: grabbing;
   }
   
-  button .icon {
+  .cButton {
     margin-right: calc(var(--ruler) / 2);
+  }
+  textarea {
+    letter-spacing: 0.5px;
+    font-size: var(--ruler);
+    color: blue;
+    width: 100%;
+    min-height: var(--ruler); /* Set a minimum height */
+    height: auto; /* Allow the textarea to grow vertically based on content */
+    resize: none; /* Disable manual resizing by the user */
+    margin-right: calc(var(--ruler) / 2);
+    box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
   }
   

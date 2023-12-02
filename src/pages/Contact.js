@@ -147,28 +147,28 @@ const Contact = () => {
     setOpen(false);
   };
 
-  return (
-    <div className="universalBackground">
-      <h1>Contact Form</h1>
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <br />
-        <input type="text" name="user_name" />
-        <br />
-        <label>Email</label>
-        <br />
-        <input type="email" name="user_email" />
-        <br />
-        <label>Message</label>
-        <br />
-        <textarea name="message" />
-        <br />
-        <input type="submit" value="Send" />
-      </form>
+return (
+  <div >
+    <h1>Contact Form</h1>
+    <form ref={form} onSubmit={sendEmail}>
+      <label>
+      <input type="text" name="user_name" placeholder='Name'/>
+      </label>
+      <br />
+      <label>
+      <input type="email" name="user_email" placeholder='Email address' />
+      </label>
+      <br />
+      <label>
+      <textarea type="text" name="message" placeholder='This space awaits your words!'/>
+      </label>
+      <br />
+      <input className='cButton' type="submit" value="Send" />
+    </form>
 
-      {open && popoverMessage && <Popover message={popoverMessage} onClose={closePopover} />}
-    </div>
-  );
+    {open && popoverMessage && <Popover message={popoverMessage} onClose={closePopover} />}
+  </div>
+);
 };
 
 export default Contact;
