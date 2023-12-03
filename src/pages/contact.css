@@ -118,5 +118,12 @@
     transition: all 0.2s ease-in-out;
     appearance: none;
     -webkit-appearance: none;
+    page-break-before:avoid;
   }
   
+  .messageTextarea {
+    min-height: 20px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    border-radius: 28px;
+  }

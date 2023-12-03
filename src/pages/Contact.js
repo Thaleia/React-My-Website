@@ -114,6 +114,23 @@ const Contact = () => {
   const form = useRef();
   const [popoverMessage, setPopoverMessage] = useState(null);
   const [open, setOpen] = useState(false);
+  const [message, setMessage] = useState('');
+
+ 
+  const adjustHeight = (event) => {
+    const el = event.target;
+    el.style.height = 'auto';
+    el.style.height = el.scrollHeight + 'px';
+
+    const lines = el.value.split('\n').length;
+    if (lines > 1) {
+      // Add an extra line at the very end of the message
+      el.style.height = el.scrollHeight + 16 + 'px';
+    }
+
+    // Ensure the border-radius remains constant at 8px
+    el.style.borderRadius = '28px';
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -160,7 +177,18 @@ return (
       </label>
       <br />
       <label>
-      <textarea type="text" name="message" placeholder='This space awaits your words!'/>
+      <textarea 
+        className="messageTextarea"
+        type="text" 
+        name="message" 
+        placeholder='This space awaits your words!'
+        value={message}
+        onChange={(e) => {
+          setMessage(e.target.value);
+          adjustHeight(e);
+        }}
+        onKeyDown={(e) => adjustHeight(e)}
+      />
       </label>
       <br />
       <input className='cButton' type="submit" value="Send" />

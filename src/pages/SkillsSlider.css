@@ -1,0 +1,39 @@
+/* SkillsSlider.css */
+.skills-slider {
+    display: flex;
+    overflow: hidden;
+    animation: slide 20s linear infinite;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .skill-item:hover {
+    opacity: 1;
+  }
+  
+  .skill-image {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .skill-name {
+    margin-top: 8px;
+    font-size: 12px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

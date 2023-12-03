@@ -27,7 +27,7 @@ body, html {
 
 .aimg1, .aimg2, .aimg3 {
     position: relative;
-    opacity: 0.70;
+    /* opacity: 0.70; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
