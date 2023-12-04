@@ -2,22 +2,32 @@
   position: relative;
   overflow: hidden; 
   height: 100svh; 
-  background-color: pink;
+  background-color: #EBECF0;
   color: white;
   padding: 20px;
+  font-family: 'Montserrat', 'sans-serif';
 }
 .hH1 {
 position: absolute;
 z-index: 2;
 margin: 20px;
+margin-block-end: 20px;
+color: black;
+text-align: start;
+font-size: calc(20px + 1vmin);
+font-weight: 700;
+text-shadow: 2px 2px 2px white;
 }
+/* MAIN BOX */
+
 .animation-box {
   position: relative;
   top: 20svh;
   width: 80svw;
   height: 60svh;
-  background-color: lightskyblue;
+  background-color: rgb(184, 221, 243);
   border: 5px white solid;
+  border-style: outset;
   margin: auto auto;
   box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
   z-index: 1;
@@ -236,17 +246,24 @@ margin: 20px;
 
 .skills-box {
   position: absolute;
-  background-color: rgb(149, 14, 14);
+  background-color: rgb(201, 7, 7);
+  background-color: rgb(88, 75, 200);
   top: 2%;
   right: 2%;
   width: 300px;
   height: 150px;
   box-sizing: border-box;
   border: 5px white solid;
+  border-style: outset;
   overflow: hidden;
   box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
   transform: translateY(0px);
   animation: float 4s ease-in-out 1;
   z-index: 5;
   transition: border-color 1s;
+  
+}
+
+.himg2:hover {
+  content: url('./images/pimg444.png');
 }

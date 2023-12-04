@@ -28,3 +28,6 @@
     background: linear-gradient(90deg, rgba(211,211,211,1) 0%, rgba(118,67,255,0.6412103746397695) 100%);
 }
 
+.universalFont {
+  font-family: 'Montserrat', sans-serif;
+}

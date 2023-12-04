@@ -1,15 +1,22 @@
 import React from 'react';
 import './home.css';
 import TypewriterComponent from './TypewriterComponent';
-// import './test.css';
 import SkillsSlider from './SkillsSlider'
+import Navbar from "./components/Navbar";
+
+
 const Home = () => {
   
   return (
+    // <Navbar />
     <div className='home'>
       {/* <h1>Thaleia Vavanou!</h1> */}
     
-      <h1 className='hH1'>I create websites that turn your customers into fans!</h1>
+      <h1 className='hH1'>
+  I craft websites 
+  that transform visitors into customers <br />
+  and ultimately into fans!
+</h1>
       {/* <button>Buy Skills</button> */}
       <div className="expanding-container">
           <img className="himg" src={require('./images/box2.jpeg')} alt="Box 2" />
@@ -30,10 +37,10 @@ const Home = () => {
         </div>
 
         <div className="box">
-          <img className="himg" src={require('./images/aimg1.jpeg')} alt="Hero" />
+          <img className="himg himg2" src={require('./images/aimg1.jpeg')} alt="Hero" />
         </div>
 
-        <div className="skills-box">
+        <div className="skills-box ">
         <SkillsSlider />
         </div>
       </div>

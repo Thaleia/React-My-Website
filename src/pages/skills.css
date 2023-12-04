@@ -23,11 +23,10 @@ h1 {
   background-color: lightgrey;
   color: #591385;
   font-weight: 900;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   box-shadow: 10px 10px 10px black;
   position: relative; 
   text-shadow: 3px 3px 3px #919191,
-
 }
 .shopping {
     display: flex;

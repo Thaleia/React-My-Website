@@ -1,8 +1,7 @@
-
-
+// Skills.jsx
 import React, { useState } from 'react';
 import { hardSkills, softSkills } from '../data/data.js';
-import "./skills.css";
+import './skills.css';
 import Shopping from './Shopping';
 import CongratulationsModal from './CongratulationsModal';
 import './congratulationsModal.css';
@@ -23,7 +22,7 @@ const SkillItem = ({ skill, addToCart }) => (
 
 const SkillsList = ({ skills, filterSkills, addToCart }) => (
   <ul>
-    {skills.filter(skill => filterSkills.includes(skill)).map(skill => (
+    {skills.filter((skill) => filterSkills.includes(skill)).map((skill) => (
       <SkillItem key={skill.id} skill={skill} addToCart={addToCart} />
     ))}
   </ul>
@@ -31,7 +30,7 @@ const SkillsList = ({ skills, filterSkills, addToCart }) => (
 
 const Skills = () => {
   const [cart, setCart] = useState([]);
-  const [skills, setSkills] = useState([...hardSkills, ...softSkills]); // Initial skills list
+  const [skills, setSkills] = useState([...hardSkills, ...softSkills]);
   const [showCongratulations, setShowCongratulations] = useState(false);
 
   const addToCart = (item) => {
@@ -58,21 +57,21 @@ const Skills = () => {
   };
 
   return (
-    <div className='skills-container universalBackground'>
+    <div className="skills-container universalBackground">
       <div className={`skills ${cart.length === 30 ? 'skills-hidden' : ''}`}>
-        <h1 className='threeD'>Hard Skills</h1>
-        <div id="hard-skills" className='hard-skills'>
+        <h1 className="threeD">Hard Skills</h1>
+        <div id="hard-skills" className="hard-skills">
           <SkillsList skills={skills} filterSkills={hardSkills} addToCart={addToCart} />
         </div>
 
-        <h1 className='threeD'>Soft Skills</h1>
-        <div id="soft-skills" className='soft-skills'>
+        <h1 className="threeD">Soft Skills</h1>
+        <div id="soft-skills" className="soft-skills">
           <SkillsList skills={skills} filterSkills={softSkills} addToCart={addToCart} />
         </div>
       </div>
 
       {cart.length > 0 && (
-        <div className='shopping'>
+        <div className="shopping">
           <Shopping
             cart={cart}
             completePurchase={completePurchase}
@@ -82,7 +81,6 @@ const Skills = () => {
         </div>
       )}
 
-      {/* CongratulationsModal is rendered conditionally based on the showCongratulations state */}
       {showCongratulations && <CongratulationsModal onClose={closeCongratulations} />}
     </div>
   );
