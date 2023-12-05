@@ -1,19 +1,26 @@
+/* navbar.css */
 :root {
 	--mainColorNavbar: black;
 	--mainColorLightNavbar: #5767aa;
-	--secondaryColorNavbar: #db2b39;
+	--secondaryColorNavbar: rgb(219, 43, 187);
 	--textColorNavbar: #eee;
 }
 
 header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	height: 80px;
-	padding: 0 2rem;
 	background-color: var(--mainColorNavbar);
 	color: var(--textColorNavbar);
 }
+
+.navbar {
+	display: flex;
+	justify-content: space-between; 
+	align-items: center;
+	padding: 0 2rem; 
+}
+
+/* .logo {
+} */
 
 .nav-a {
 	margin: 0 1rem;
@@ -25,6 +32,9 @@ header {
 .nav-a:hover {
 	color: var(--secondaryColorNavbar);
 	cursor: grab;
+}
+.nav-a:active {
+	cursor: grabbing;
 }
 
 header .nav-btn {
@@ -39,13 +49,12 @@ header .nav-btn {
 	font-size: 1.8rem;
 }
 
-header div,
 nav {
 	display: flex;
 	align-items: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
@@ -64,6 +73,7 @@ nav {
 		gap: 1.5rem;
 		background-color: var(--mainColorNavbar);
 		transition: 1s;
+		z-index: 1000;
 	}
 
 	header .responsive_nav {
@@ -79,4 +89,11 @@ nav {
 	.nav-a {
 		font-size: 1.5rem;
 	}
+	.nav-btn svg
+	 {
+		font-size: 16px;
+		display: flex;
+		align-self: flex-start;
+	}
+	
 }

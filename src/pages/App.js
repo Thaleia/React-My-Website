@@ -1,5 +1,5 @@
 // App.js
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
 import Home from './Home';
@@ -9,6 +9,8 @@ import About from './About';
 import NoPage from './NoPage';
 import Navbar from './components/Navbar';
 import Skills from './Skills'; 
+import FooterPlain from "./components/FooterPlain.js";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
             <>
               <Navbar />
               <Layout />
+              <FooterPlain />
             </>
           }
         >

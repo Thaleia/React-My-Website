@@ -77,6 +77,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.css';
+import './app.css';
 
 const Popover = ({ message, onClose }) => {
   return (
@@ -165,8 +166,10 @@ const Contact = () => {
   };
 
 return (
-  <div >
-    <h1>Contact Form</h1>
+  <div className='universalBackground contact'>
+    <h1 style={{marginBottom: "30px",
+                fontSize: "calc(26px +1vmin)"
+                }} >Contact Form</h1>
     <form ref={form} onSubmit={sendEmail}>
       <label>
       <input type="text" name="user_name" placeholder='Name'/>

@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import { hardSkills, softSkills } from '../data/data.js';
 import './skills.css';
 import Shopping from './Shopping';
-import CongratulationsModal from './CongratulationsModal';
-import './congratulationsModal.css';
+import CongratulationsModal from './components/CongratulationsModal';
+import './components/congratulationsModal.css';
 import './app.css';
 
 const SkillItem = ({ skill, addToCart }) => (

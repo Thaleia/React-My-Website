@@ -31,3 +31,63 @@
 .universalFont {
   font-family: 'Montserrat', sans-serif;
 }
+
+  /* PULSING ELEMENTS */
+
+  .pulsing-element {
+    color: #fff;
+    display: inline;
+    background-color: transparent;
+    font-size: calc(9px + 1vmin);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #5271ff,
+        0 0 82px #5271ff,
+        0 0 92px #5271ff,
+        0 0 102px #5271ff,
+        0 0 151px #5271ff;
+  }
+
+.pulsing-box-shadow { 
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe; 
+}
+.pulsing-h1 {
+  font-size: calc(16px + 1vmin);
+  cursor: pointer;
+}
+.pulsing-h1-main:hover, .pulsing-h1:hover {
+    animation: pulsateH1 1.5s infinite alternate;  
+}
+
+@keyframes pulsateH1 {
+  100% {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 30px #fff,
+      0 0 60px #3F00FF,
+      0 0 120px #3F00FF,
+      0 0 140px #3F00FF,
+      0 0 150px #3F00FF,
+      0 0 200px #3F00FF;
+  }
+  0% {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 15px #fff,
+      0 0 30px #3F00FF,
+      0 0 70px #3F00FF,
+      0 0 80px #3F00FF,
+      0 0 100px #3F00FF,
+      0 0 120px #3F00FF;
+  }
+}
+

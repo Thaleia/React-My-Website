@@ -1,6 +1,6 @@
 import React from 'react';
 import "./about.css";
-import { MdOutlineAccessTime } from "react-icons/md";import { FaCheckDouble } from "react-icons/fa";
+import { FaCheckDouble } from "react-icons/fa";
 
 const About = () => {
   return (

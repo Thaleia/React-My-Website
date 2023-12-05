@@ -11,14 +11,14 @@ function Navbar() {
   };
 
   return (
-    <header className="universalFont">
-      <h4>Thaleia Vavanou</h4>
+    <header className="universalFont navbar">
+      <h4 className="logo">Thaleia Vavanou</h4>
       <nav ref={navRef}>
         <Link className="nav-a" to="/">Home</Link>
         <Link className="nav-a" to="/about">About</Link>
         <Link className="nav-a" to="/projects">Projects</Link>
         <Link className="nav-a" to="/skills">Skills</Link>
-        <Link className="nav-a" to="/contact">Contact me</Link>
+        <Link className="nav-a" to="/contact">Contact</Link>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>

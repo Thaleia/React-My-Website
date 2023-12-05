@@ -1,7 +1,7 @@
 // Shopping.js
 
 import React from 'react';
-import SkillsMessages from './SkillsMessages';
+import SkillsMessages from './components/SkillsMessages';
 import './skills.css';
 
 const Shopping = ({ cart, completePurchase, addToCart }) => {
