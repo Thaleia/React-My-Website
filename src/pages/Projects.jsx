@@ -24,8 +24,8 @@ const Project = ({ project }) => (
 );
 
 const Projects = () => (
-  <>
-  <h1>Projects</h1>
+  <div className='universalBackground'>
+  <h1 className='threeD' style={{textAlign: 'center'}}>Projects</h1>
   <div className="projects-container">
     <ul className="projects-list">
       {projects.map((project) => (
@@ -33,7 +33,7 @@ const Projects = () => (
       ))}
     </ul>
   </div>
-  </>
+  </div>
 );
 
 export default Projects;

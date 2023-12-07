@@ -7,6 +7,8 @@
 
 .footer-container {
     min-height: 80px;
+    border-top: 3px groove #eee;
+
 }
 a {
     color: inherit;

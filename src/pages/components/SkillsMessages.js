@@ -12,7 +12,7 @@ const SkillsMessages = ({ numSkills }) => {
       setMessage(skillsMessagesData[numSkills - 1]);
     }
 
-    // Clear the message after 2 seconds
+    // Clear the message after 3 seconds
     const timeoutId = setTimeout(() => {
       setMessage('');
     }, 2000);

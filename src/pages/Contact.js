@@ -167,8 +167,8 @@ const Contact = () => {
 
 return (
   <div className='universalBackground contact'>
-    <h1 style={{marginBottom: "30px",
-                fontSize: "calc(26px +1vmin)"
+    <h1 className='threeD' style={{marginBottom: "30px",
+                fontSize: "calc(26px +1vmin)", letterSpacing: '0'
                 }} >Contact Form</h1>
     <form ref={form} onSubmit={sendEmail}>
       <label>

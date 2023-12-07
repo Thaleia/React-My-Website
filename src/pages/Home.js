@@ -11,13 +11,15 @@ const Home = () => {
       <div className="expanding-container">
           <img className="himg" src={require('./images/box2.jpeg')} alt="Box 2" />
       </div>
-      <h1 className='hH1'>
-        I craft websites to transform visitors into customers <br />
-        and ultimately into fans!
-      </h1>
-      <h2>
-        <TypewriterComponent />
-      </h2>
+      <div className='text-wrapper'>
+        <h1 className='hH1'>
+          I craft websites to transform visitors into customers <br />
+          and ultimately into fans!
+        </h1>
+        <h2 className='typewriter'>
+          <TypewriterComponent />
+        </h2>
+      </div>
     </div>
   );
 };

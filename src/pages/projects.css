@@ -7,15 +7,18 @@
 }
 
 .project {
-    border: 1px solid #ddd;
+    background-color: lightgrey;
+    border: 1px solid transparent;
+    border-radius: 8px;
     padding: 20px;
+    color: #591385;
     text-align: center;
     list-style: none;
     overflow: hidden;
     display: grid;
     gap: 10px;
     grid-template-rows: min-content min-content 1fr min-content min-content; 
- 
+    
 }
 
 .button-container {
