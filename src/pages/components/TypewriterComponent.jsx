@@ -6,13 +6,17 @@ const TypewriterComponent = () => {
     <Typewriter
       onInit={(typewriter) => {
         typewriter
+          .pauseFor(4000)
           .typeString('Full Stack Developer')
-          .pauseFor(500)
+          .pauseFor(1000)
           .deleteAll()
           .typeString('Frontend Developer')
-          .pauseFor(2000)
+          .pauseFor(1000)
           .deleteAll()
-          .typeString('Full Stack Developer')
+          .typeString('Discover Projects')
+          .pauseFor(1000)
+          .deleteAll()
+          .typeString('Explore Skills')
           .start();
       }}
     />
