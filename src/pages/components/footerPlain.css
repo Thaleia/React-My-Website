@@ -1,13 +1,8 @@
-:root {
-	--mainColorNavbar: black;
-	--mainColorLightNavbar: #5767aa;
-	--secondaryColorNavbar: rgb(219, 43, 187);
-	--textColorNavbar: #eee;
-}
+
 
 .footer-container {
     min-height: 80px;
-    border-top: 3px groove #eee;
+    /* border-top: 3px groove #eee; */
 
 }
 a {

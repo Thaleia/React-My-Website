@@ -1,53 +1,37 @@
 /* navbar.css */
 :root {
 	--mainColorNavbar: black;
-	--mainColorLightNavbar: #5767aa;
-	--secondaryColorNavbar: rgb(219, 43, 187);
-	--textColorNavbar: #eee;
+	--secondaryColorNavbar: rgb(190, 230, 255);
+	/* --textColorNavbar: #eee; */
+	--textColorNavbar: white;
 }
-
-header {
-	height: 80px;
-	background-color: var(--mainColorNavbar);
-	color: var(--textColorNavbar);
-	border-bottom: 3px groove #eee;
-	/* border-bottom: 3px double #eee; */
+.middle {
+	display: flex;
+	align-items: center;
 }
-
 .navbar {
 	display: flex;
 	justify-content: space-between; 
 	align-items: center;
 	padding: 0 2rem; 
+	height: 80px;
+	background-color: var(--mainColorNavbar);
+	color: var(--textColorNavbar);
 }
 
-.logo {
-	font-size: calc(1em + 1vmin);
-	animation-name: animate;
-	animation-duration: 0.8s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+ .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColorNavbar);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
 }
-@keyframes animate {
-	0% {
-	  filter: drop-shadow(0px 0px 1px #fff)
-	  drop-shadow(0px 0px 3px #04085d)
-	  drop-shadow(0px 0px 5px rgb(97, 90, 182))
-	  /* drop-shadow(0px 0px 30px #ff4d94) */
-	  /* drop-shadow(0px 0px 50px #ff0066); */
-	}
-  
-	100% {
-	  filter: drop-shadow(0px 0px 3px #04085d)
-	  drop-shadow(0px 0px 6px #04085d)
-	  drop-shadow(0px 0px 5px rgb(97, 90, 182))
-	  /* drop-shadow(0px 0px 40px #ff4d94) */
-	  /* drop-shadow(0px 0px 60px #ff0066);  */
-	}
-  }
-  
 .nav-a {
-	margin: 0 1rem;
+	margin-inline-end: 1rem;
 	color: var(--textColorNavbar);
 	text-decoration: none;
 	cursor: pointer;
@@ -61,7 +45,7 @@ header {
 	cursor: grabbing;
 }
 
-header .nav-btn {
+.nav-btn {
 	padding: 5px;
 	cursor: pointer;
 	background: transparent;
@@ -73,18 +57,39 @@ header .nav-btn {
 	font-size: 1.8rem;
 }
 
-nav {
-	display: flex;
-	align-items: center;
+.logo {
+	font-size: calc(1em + 1vmin);
+	animation-name: animate;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	text-decoration: none;
 }
 
+/* ANIMATION */
+
+@keyframes animate {
+	0% {
+	  filter: drop-shadow(0px 0px 1px #fff)
+	  drop-shadow(0px 0px 3px #04085d)
+	  drop-shadow(0px 0px 5px rgb(97, 90, 182))
+	}
+  
+	100% {
+	  filter: drop-shadow(0px 0px 3px #04085d)
+	  drop-shadow(0px 0px 6px #04085d)
+	  drop-shadow(0px 0px 5px rgb(97, 90, 182))
+	}
+  }
+
+/* Medium devices (landscape tablets, 767px and down) */
 @media only screen and (max-width: 767px) {
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
 	}
 
-	header nav {
+	nav {
 		position: fixed;
 		top: -100vh;
 		left: 0;
@@ -100,7 +105,7 @@ nav {
 		z-index: 1000;
 	}
 
-	header .responsive_nav {
+	.responsive_nav {
 		transform: translateY(100vh);
 	}
 
@@ -111,7 +116,14 @@ nav {
 	}
 
 	.nav-a {
-		font-size: 1.5rem;
+		font-size: 16px;
+		cursor: pointer;
+	}
+	.nav-a:hover {
+		cursor: pointer;
+	}
+	.nav-a:hover {
+		cursor: grabbing;
 	}
 	.nav-btn svg
 	 {
@@ -120,4 +132,11 @@ nav {
 		align-self: flex-start;
 	}
 	
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.nav-a {
+		font-size: 14px;
+	}
 }

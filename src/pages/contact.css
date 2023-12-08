@@ -1,9 +1,22 @@
+
+:root {
+  --ruler: 16px;
+  --color-bg: #EBECF0;
+  --color-shadow: #BABECC;
+  --color-white: #FFF;
+  --color-button: #5e68aa;
+  --color-bc: rgb(67, 78, 120);
+}
+
 .contact {
   min-height: calc(100vh - 160px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgba(48,112,157,1);
+  background-color: rgb(60, 140, 197);
+  /* background-color: #eee; */
 }
 .popover {
     position: fixed;
@@ -15,45 +28,22 @@
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 999;
+    width: fit-content;
   }
-  
+  .send-email {
+    display: flex;
+    align-items: center;  }
+    .send-email i {
+      margin-left: 5px; /* Adjust the margin as needed */
+    }
   .popover p {
     margin: 0 0 10px;
   }
 
-  :root {
-    --ruler: 16px;
-    --color-red: #AE1100;
-    --color-bg: #EBECF0;
-    --color-shadow: #BABECC;
-    --color-white: #FFF;
-  }
-  
-  /* body,
-  html {
-    background-color: var(--color-bg);
-  } */
-  
-  /* select,
-  textarea,
-  button {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: -0.2px;
-    font-size: var(--ruler);
-    color: blue;
-  } */
-  
-  /* div,
-  p {
-    color: var(--color-shadow);
-    text-shadow: 1px 1px 1px var(--color-white);
-  } */
-  
   form {
     padding: var(--ruler);
     width: calc(var(--ruler) * 20);
     margin: 0 auto;
-
   }
   
   .cButton,
@@ -89,36 +79,15 @@
   input:focus {
     box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
   }
-  
-  .cButton {
-    color: #61677C;
-    font-weight: bold;
-    box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    font-weight: 600;
-  }
-  
-  .cButton:hover {
-    box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
-  }
-  
-  .cButton:active {
-    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
-    cursor: grabbing;
-  }
-  
-  .cButton {
-    margin-right: calc(var(--ruler) / 2);
-  }
+
   textarea {
     letter-spacing: 0.5px;
     font-size: var(--ruler);
-    color: blue;
+    color: inherit;
     width: 100%;
-    min-height: var(--ruler); /* Set a minimum height */
-    height: auto; /* Allow the textarea to grow vertically based on content */
-    resize: none; /* Disable manual resizing by the user */
+    min-height: var(--ruler); 
+    height: auto; 
+    resize: none; 
     margin-right: calc(var(--ruler) / 2);
     box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
     box-sizing: border-box;
@@ -127,10 +96,26 @@
     -webkit-appearance: none;
     page-break-before:avoid;
   }
-  
+
   .messageTextarea {
     min-height: 20px;
     overflow-y: auto;
     word-wrap: break-word;
     border-radius: 28px;
+  
+  }
+
+  .cButton {
+    color: #61677C;
+    margin-right: calc(var(--ruler) / 2);
+    font-weight: bold;
+    box-shadow: -2px -2px 5px var(--color-button), 2px 2px 5px var(--color-bc);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .cButton:active {
+    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+    cursor: grabbing;
   }
