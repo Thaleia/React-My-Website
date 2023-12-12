@@ -57,9 +57,9 @@ const Skills = () => {
   };
 
   return (
-    <div className="skills-container universalBackground">
+    <div className="skills-container universalBackgroundSub">
       <div className={`skills ${cart.length === 30 ? 'skills-hidden' : ''}`}>
-        <h1 className="threeD">Hard Skills</h1>
+        <h1 className="threeD new">Hard Skills</h1>
         <div id="hard-skills" className="hard-skills">
           <SkillsList skills={skills} filterSkills={hardSkills} addToCart={addToCart} />
         </div>

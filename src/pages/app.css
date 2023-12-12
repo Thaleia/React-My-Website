@@ -1,5 +1,5 @@
 
-  .threeD {
+  .threeDOriginal {
     color: #591385;
     color: #861dc8;
     color: white;
@@ -13,12 +13,45 @@
     padding-bottom: 0;
     margin-bottom: 0;
   }
-
-  .threeD:hover {
+  .threeDOriginal:hover {
     transition: 0.3s;
     text-shadow: 1px -1px 0 #3b217f, 1px -2px 0 #3b217f, 1px -3px 0 #5832bf,
       1px -4px 0 #5832bf, 1px -5px 0 #6438d8, 1px -6px 0 #6438d8, 1px -7px 0 #7643ff,
       1px -8px 0 #7643ff, 5px -13px 15px black, 5px -13px 25px #5832bf;
+  }
+  .threeD {
+    color: #591385;
+    color: #861dc8;
+    color: white;
+    white-space: nowrap;
+    font-size: 2.8em;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    text-shadow: 
+    1px 1px 0 #490eff,
+    1px 2px 0 #3F00FF,
+    1px 3px 0 #3F00FF,
+    1px 4px 0 #3600dc,
+    1px 5px 0 #3600dc,
+    1px 6px 0 #2a00ab,   
+    5px 13px 15px #1e007a;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .threeD:hover {
+    transition: 0.3s;
+    text-shadow: 
+    1px -1px 0 #4f16ff,
+     1px -2px 0 #4f16ff,
+      1px -3px 0 #3e00fc,
+      1px -4px 0 #3e00fc,
+       1px -5px 0 #3a00ec, 
+       1px -6px 0 #3a00ec,
+        1px -7px 0 #3200cc,
+      1px -8px 0 #3200cc, 
+      5px -13px 15px #3F00FF, 
+      5px -13px 25px #3F00FF;
   }
   
   /* Kudos to Ashis Anand for sharing the threeD code that I partly used in this project: https://codepen.io/anotherwebguy/pen/zmGrrz */
@@ -30,7 +63,9 @@
     background: linear-gradient(165deg, rgba(44,62,80,1) 0%, rgba(45,70,94,1) 3%, rgba(45,73,98,1) 4%, rgba(46,79,107,1) 6%, rgba(46,82,111,1) 7%, rgba(47,91,125,1) 10%, rgba(47,94,129,1) 11%, rgba(47,97,133,1) 12%, rgba(48,108,151,1) 15%, rgba(48,112,157,1) 16%, rgba(49,120,169,1) 18%, rgba(50,126,179,1) 21%, rgba(50,130,185,1) 23%, rgba(50,134,191,1) 25%, rgba(50,135,192,1) 27%, rgba(50,135,192,1) 29%, rgba(50,135,192,1) 32%, rgba(50,136,193,1) 35%, rgba(50,137,194,1) 38%, rgba(50,137,195,1) 40%, rgba(50,137,196,1) 43%, rgba(50,138,197,1) 47%, rgba(50,138,198,1) 50%, rgba(51,139,200,1) 54%, rgba(51,140,202,1) 57%, rgba(51,142,204,1) 62%, rgba(51,143,206,1) 67%, rgba(51,146,210,1) 75%, rgba(51,148,214,1) 88%, rgba(52,152,219,1) 100%);
 
 }
-
+.universalBackgroundSub {
+background-color: rgb(60, 140, 197);
+}
 .universalFont {
   font-family: 'Montserrat', sans-serif;
 }
@@ -94,3 +129,17 @@
   }
 }
 
+.cButton {
+  color: #61677C;
+  margin-right: calc(var(--ruler) / 2);
+  font-weight: bold;
+  box-shadow: -2px -2px 5px var(--color-button), 2px 2px 5px var(--color-bc);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cButton:active {
+  box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+  cursor: grabbing;
+}

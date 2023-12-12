@@ -6,7 +6,7 @@ export const projects = [
       subtitle: "React useEffect",
       description:
         "My favourite positive affirmations change either by refreshing the page or by clicking the button.",
-      image: "https://user-images.githubusercontent.com/42918656/265540100-589c8029-85eb-41e6-9c47-c95cea6ed283.png",
+      image: "https://github.com/Thaleia/React-useEffect-Positive-Affirmations/assets/42918656/e97b6325-8fba-4ce7-adca-baf6869b56ae",
       link: "https://codesandbox.io/s/misty-cdn-3qdtht?file=/src/PositiveAff.jsx",
     },
     {

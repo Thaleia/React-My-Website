@@ -16,6 +16,8 @@
   justify-content: center;
   background-color: rgba(48,112,157,1);
   background-color: rgb(60, 140, 197);
+  /* background-color: #0075BB; */
+
   /* background-color: #eee; */
 }
 .popover {
@@ -44,6 +46,7 @@
     padding: var(--ruler);
     width: calc(var(--ruler) * 20);
     margin: 0 auto;
+    padding-block-end: 40px;
   }
   
   .cButton,
@@ -105,17 +108,3 @@
   
   }
 
-  .cButton {
-    color: #61677C;
-    margin-right: calc(var(--ruler) / 2);
-    font-weight: bold;
-    box-shadow: -2px -2px 5px var(--color-button), 2px 2px 5px var(--color-bc);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    font-weight: 600;
-  }
-  
-  .cButton:active {
-    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
-    cursor: grabbing;
-  }
